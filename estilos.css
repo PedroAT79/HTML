@@ -1,0 +1,289 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;/*para que el tamaño de la caja no cambie*/
+    
+}
+
+body{
+    font-family: 'Lato', sans-serif;
+    font-weight: 300;
+}
+
+.barraNavegacion{
+    width: 100%;
+    height: 10vh;
+    padding: 20px;
+    /*background-color:#36B997;*/
+}
+
+.boton{
+    color: #fff;
+    text-decoration: none;
+    margin: 20px 10px;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.boton:hover{
+    color: #3740CB;
+    text-decoration: underline;
+}
+.section{
+    width: 100%;
+    height: 150vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 0.1px; /*para que no se mueva la imagen*/
+}
+
+.sect1{
+   
+    background-image: url(imagenes/pexels-max-fischer-5212653.jpg);
+    
+}
+.headerNavegation{
+    background-color: #3592C3;
+}
+
+.tituloH1{
+    background-color:#36B997;
+    color:#3740CB;
+    width: 70vw;
+    height: 100px;
+    margin: auto;
+    text-align: center;
+    line-height: 100px ;
+    margin-top: calc(50vh - 50px); /*50vh xq es la mitad de lo que mide la pantalla y 50px xq es la mitad de lo que mide la caja donde esta el titulo*/
+    border-radius: 15px;
+    font-size: 50px;
+}
+
+.sect2{
+    
+    background-color: #3592C3;
+    padding: 60px 30px;
+}
+
+
+
+.tituloH2{
+    text-align: center;
+    color:#3740CB;
+    margin-bottom: 20px;
+    font-size: 40px;
+
+    
+}
+
+.parrafoS2, .parrafoS3{
+    text-align: justify;
+    font-style: italic;
+    font-size: large;
+    font-weight: 400;
+    color: #FFF;
+}
+
+.parrafoS2>p{
+    width: 70%;
+    display: block;
+}
+
+.sect3{
+    padding: 60px 30px;
+    background-image: url(imagenes/pexels-julia-m-cameron-4144294.jpg);
+    
+}
+
+.sect3>.tituloH2{
+    width: 100%;
+    color: #3740CB;
+    font-size: 40px;
+    background-color: #36B997;
+    border-radius: 15px;
+    padding: 10px 5px;
+    width: 45vw;
+    margin: auto;
+    
+}
+.metodo{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50%;
+    margin: 60px auto;
+    align-content: center;
+    flex-wrap: wrap;
+    align-items: center;
+    
+}
+
+.metodologia{
+    display: flex;
+    color: #fff;
+    background-color: #3592C3;
+    width: 250px;
+    margin:  10px 20px;
+    font-size: 25px;
+    font-weight:600;
+    border-radius: 15px;
+    padding: 20px;
+    border:3px solid #36B997;
+
+}
+
+.metodologia:hover{
+    background-color: #fff;
+    color: #3592C3;
+}
+
+
+.botonFooter{
+    color: #FFF;
+    text-decoration: none;
+    
+     
+}
+
+.botonFooter:hover{
+    color: #3740CB;
+    text-decoration: underline;
+    font-weight: 600;
+}
+
+
+.formularioContacto{
+    width: 30%;
+    margin: 50px auto;
+}
+
+.formInput{
+    width: 100%;
+    margin-top: 10px;
+    padding: 30px;
+    border-radius: 15px;
+    border: 0px;
+    color:#36B997;
+    font-weight: 400;
+    
+}
+
+.formBoton{
+    padding: 12px 40px;
+    background-color: #36B997;
+    border-radius: 7px;
+    margin: 12px;
+    color:#3740CB;
+    font-weight: 600;
+    border: none;
+}
+
+.formBoton:hover{
+    background-color:#3740CB;
+    color: #FFF;
+}
+
+.formInput::placeholder{
+    color: #3740CB;
+}
+
+.sect4{
+    
+    background-color: #3592C3;
+    padding: 30px 30px;
+    height: min-content;
+}
+footer{
+    display: flex;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.footer .mapa{
+    width: 30%;
+    display: flex;
+
+    
+}
+.footer .navigation{
+    width: 30%;
+    display: flex;
+
+    
+}
+
+.footerRRSS{
+    display: flex;
+    align-items: center;
+    flex-flow: column
+    
+}
+
+.footerRRSS h3{
+    width: 100%;
+}
+.tituloH3{
+    color:#3740CB;
+    font-size: 20px;
+    padding-bottom: 15px;
+    text-align: center;
+    width: 100%;
+}
+.rrss{
+    margin: 10px;
+}
+
+.rrss img{
+    width: 48px;
+}
+.container{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(2,50%);
+    
+}
+.asignaturas{
+    width: 95%;
+    height: 60vh;
+    margin-top: 80px;
+    display: grid;
+    grid-template-columns: repeat(2, 45%);
+    grid-template-rows: repeat(2, 45%);
+    justify-content: center;
+    gap: 15px;
+    
+    
+}
+
+.asignatura{
+    background-color: #3592C3 ;
+    color: #FFF;
+    text-align: center;
+    align-items: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 15px;
+    font-size: 25px;
+    font-weight: 600;
+}
+ .asignatura:hover{
+    background-color: #fff;
+    color:#3592C3
+ }
+  
+
+
+
+
+
+
+
+
+
+
+
+
+
+
