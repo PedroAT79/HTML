@@ -39,7 +39,7 @@ body{
 }
 .section2{
     width: 100%;
-    height: 20vh;
+    height: 10vh;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -185,28 +185,29 @@ body{
 
 .formBoton{
     padding: 12px 40px;
-    background-color: #36B997;
+    background-color: #3592C3;
     border-radius: 7px;
-    margin: 10px auto;
-    color:#3740CB;
+    margin: 15px auto;
+    color:#FFF;
     font-weight: 600;
-    font-size: large;
     border: none;
-    width: 100%;
+    width: 55%;
     transition: transform .4s;
+    display: flex;
+    justify-content: center;
     
 }
 
 .formBoton:hover{
-    background-color:#3740CB;
+    
     color: #FFF;
     cursor: pointer;
-    transform: scale(1.05);
+    transform: scale(1.15);
 
 }
 
 .formInput::placeholder{
-    color: #3740CB;
+    color: black;
 }
 
 .sect4{
@@ -303,4 +304,182 @@ footer{
  .foto:hover{
     border:4px solid #fff;
  }
+
+ /*-----FORMULARio REGISTRO---*/
+
+ .body-form{
+    width:100%;
+    height: 100vh;
+    font-family: 'Roboto', sans-serif;
+    /*background-image: linear-gradient(to top, #cfd9df 0%, #e2ebf0 100%);*/
+    display: flex;
+    justify-content: center;
+    align-items: center;
+ }
+ .grid-container{
+    width: 90%; 
+    max-width: 1400px;
+    height: 90%;
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-template-areas: 
+    "navegador navegador navegador"
+    "image image formulario"
+    "footer footer footer";
+    background-color: #fff;
+ }
+ 
+ .contenedor-image{
+     grid-area: image;
+     height: 100%;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     background-color: #fff;
+     
+ }
+
+ .img-form{
+    width: 80%;
+ }
+
+ .contenedor-form{
+    grid-area: formulario;
+    align-self: center;
+    text-align: center;
+
+}
+
+.footer-form{
+    grid-area: footer;
+    align-self: center;
+    text-align: center;
+    margin-top: 20px;
+}
+
+.contenedor-nav{
+    grid-area: navegador;
+    margin-bottom: 20px;
+}
+
+.input{
+    font-family: inherit;
+    display: inline-block;
+    width: 65%;
+    background: none;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid #c0bbbb;
+    padding: 3px 0 10px 30px;
+}
+.group-input{
+    position: relative;
+    width: 90%;
+    margin: 40px auto 0 auto;
+    font-family: inherit;
+}
+.icono{
+    position: absolute;
+    bottom: 10px;
+}
+
+input{
+    font-family: inherit;}
+
+.submit{
+display: inline-block;
+margin-top: 40px;
+color:#fff;
+border: none;
+outline: none;
+background:#3592C3;
+padding: 15px 20px;
+cursor:pointer;
+border-radius: 5px;
+transition: transform .4s;
+}
+
+.submit:hover{
+    transform: scale(1.1);
+}
+
+.contacto-form{
+    font-weight: 300;
+    margin-bottom: 20px;
+}
+
+.sect6{
+    background: #3592C3;
+    padding: 18px;
+}
+ 
+/*----CURSOS-----*/
+.grid-container-card{
+    width:95%;
+    margin: 40px auto 0 auto;
+    display: grid;
+    grid-template-areas: 
+    "navegador navegador navegador"
+    "principal principal principal "
+    "footer footer footer";
+
+}
+.container-cards{
+    grid-area: principal;
+    width: 90%;
+    display: grid;
+    justify-content: space-evenly;
+    gap: 30px;
+    grid-template-columns: repeat(auto-fit, minmax(180px,300px));
+    margin: auto;
+}
+.item{
+    text-align:center;
+    overflow: hidden;
+    height: auto;
+    background: #fff;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    box-shadow: 0 20px 40px -14px rgba(0, 0, 0, .25);
+
+}
+
+.img-card{
+    width: 100%;
+    display: block;
+    height: 300px;
+    object-fit: cover;
+}
+.contendor-texto{
+    width: 100%;
+    padding: 20px 0 30px 0;
+}
+
+.title-card{
+    font-weight: 700;
+    margin-top: 15px;
+}
+
+.card-copy{
+    font-weight: 300;
+    margin: 8px 0 16px 0;
+
+}
+
+.cta{
+    background:#3592C3;
+    display: inline-block;
+    padding: 15px 50px;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+    transition: transform .4s;
+}
+
+.cta:hover{
+    transform: scale(1.1);
+}
+
+
 
