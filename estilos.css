@@ -26,12 +26,20 @@ body{
 }
 
 .boton:hover{
-    color: #3740CB;
+    
     text-decoration: underline;
 }
 .section{
     width: 100%;
     height: 100vh;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    padding: 0.1px; /*para que no se mueva la imagen*/
+}
+.section2{
+    width: 100%;
+    height: 20vh;
     background-attachment: fixed;
     background-position: center;
     background-size: cover;
@@ -89,13 +97,14 @@ body{
 }
 
 .sect3{
-    padding: 60px 30px;
+    padding: 20px 30px;
     background-image: url(imagenes/pexels-julia-m-cameron-4144294.jpg);
 }
 
 .sect5{
-    padding: 60px 30px;
+    padding: 20px 30px;
     background-image: url(imagenes/pexels-max-rahubovskiy-6180740.jpg);
+    
 }
 
 
@@ -242,7 +251,7 @@ footer{
 }
 
 .rrss img{
-    width: 48px;
+    width: 36px;
 }
 .container{
     width: 100%;
@@ -260,10 +269,7 @@ footer{
     grid-template-rows: repeat(2, 45%);
     justify-content: center;
     gap: 10px;
-    
-    
-}
-
+ }
 
 .asignatura{
     background-color: #3592C3 ;
